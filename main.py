@@ -1035,7 +1035,7 @@ def reply_menu(user_id):
 def premium_menu(user_id):
     markup = types.InlineKeyboardMarkup()
     current_price = settings.get("price", 1)
-    markup.row(types.InlineKeyboardButton("👤 Contact Owner @RIYAD_CODER", url="https://t.me/RIYAD_CODER_CHATS"))
+    markup.row(types.InlineKeyboardButton("👤 Contact Owner @riyadcoder", url="https://t.me/RIYAD_CODER_CHATS"))
     markup.row(types.InlineKeyboardButton(f"💎 Buy Premium ({current_price} XTR)", callback_data="PREMIUM_PAY_INVOICE"))
     return markup
 
